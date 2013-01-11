@@ -58,6 +58,12 @@
 
     <div class="container-fluid">
       <div class="row-fluid">
+        
+        <div class="span9">
+          <%= bootstrap_flash %>
+          <%= yield %>
+        </div><!--/span-->
+
         <div class="span3">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
@@ -68,10 +74,7 @@
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
-        <div class="span9">
-          <%= bootstrap_flash %>
-          <%= yield %>
-        </div>
+        
       </div><!--/row-->
 
       <footer>
